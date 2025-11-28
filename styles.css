@@ -1,0 +1,165 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background-color: white;
+    color:black;
+}
+.shower{
+    background-image: url(cos.jpg);
+    height:100vh;
+    background-size: cover;
+}
+.navbar{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    padding:25px;
+}
+.navbar-container{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+}
+.navbar-logo{
+    color:antiquewhite;
+    text-decoration: none;
+    font-size:30px;
+}
+.navbar-container .navbar-menu{
+    display:flex;
+    gap:30px;
+    list-style: none;
+}
+.navbar-container .navbar-menu li a{
+    color:white;
+    text-decoration: none;
+    font-size:25px;
+}
+.navbar-toggle{
+    background: transparent;
+    border:none;
+    display:none;
+}
+.bar{
+    width:25px;
+    height:3px;
+    display:block;
+    margin:5px;
+    background-color: white;
+}
+.show{
+    padding:200px;
+    text-align: center;
+}
+#about h1{
+    padding:25px;
+    color:blue;
+}
+h1{
+    padding:30px;
+    color:blue;
+}
+#about p{
+    padding:30px;
+}
+#ministries{
+    display:grid;
+    grid-template-columns: repeat(4, 2fr);
+    padding:20px;
+    grid-gap:20px;
+}
+#ministries h2{
+    color:brown;
+}
+img{
+    width:300px;
+    height:250px;
+}
+#events{
+    display:grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap:20px;
+}
+#events img{
+    padding:20px;
+    border-radius:30px;
+}
+#events li{
+    list-style: none;
+    text-align: center;
+    padding:5px;
+}
+html{
+    scroll-behavior: smooth;
+}
+#contact p{
+    padding:20px;
+}
+footer{
+    background-color: dimgray;
+    text-align: center;
+    padding:15px;
+}
+@media(max-width:700px){
+    .navbar-container .navbar-menu{
+        flex-direction: column;
+        top:80px;
+        right:0;
+        position:absolute;
+        display:none;
+        background-color: black;
+        color:white;
+        width:200px;
+        height:350px;
+        text-align: center;
+        padding:10px;
+    }
+    #about h1{
+        padding:30px;
+    }
+    #events{
+        display:block;
+    }
+    img{
+        width:80%;
+        padding:30px;
+    }
+    .shower{
+        height:50vh;
+    }
+    #ministries{
+        display:block;
+    }
+    #ministries div {
+        padding:15px;
+    }
+    .show{
+        padding:50px;
+        text-align: center;
+    }
+    .show p{
+        padding:25px;
+    }
+    .navbar-logo{
+        font-size:20px;
+    }
+    .navbar-container .navbar-menu.active{
+        display:flex;
+    }
+    .navbar-toggle{
+        display:block;
+    }
+    .navbar-toggle.active .bar:nth-child(2){
+        opacity:0;
+    }
+    .navbar-toggle.active  .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .navbar-toggle.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
