@@ -55,6 +55,9 @@ body{
     padding:200px;
     text-align: center;
 }
+.show p{
+  color:blue;
+}
 #about h1{
     padding:25px;
     color:blue;
@@ -163,3 +166,4 @@ footer{
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+
