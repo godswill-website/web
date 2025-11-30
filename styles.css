@@ -57,6 +57,11 @@ body{
 }
 .show p{
   color:blue;
+    padding:15px;
+    font-size:20px;
+}
+show h2{
+    font-size: 20px;
 }
 #about h1{
     padding:25px;
@@ -166,4 +171,5 @@ footer{
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+
 
