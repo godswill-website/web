@@ -7,7 +7,7 @@ body{
     color:black;
 }
 .shower{
-    background-image: url(church imafe.jpg);
+    background-image: url(church_imafe.jpg);
     height:100vh;
     background-size: cover;
 }
@@ -172,6 +172,7 @@ footer{
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+
 
 
 
