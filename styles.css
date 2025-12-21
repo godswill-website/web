@@ -56,13 +56,14 @@ body{
     text-align: center;
 }
 .show p{
-  color:blue;
+  color:white
+    
     padding:20px;
     font-size:20px;
 }
 .show h2{
     font-size:30px;
-    color:blue;
+    color:white;
 }
 #about h1{
     padding:25px;
@@ -172,6 +173,7 @@ footer{
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+
 
 
 
